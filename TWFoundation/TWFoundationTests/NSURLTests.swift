@@ -14,10 +14,11 @@ class NSURLTests: XCTestCase {
         
         let filename = "test"
         let fileExtension = "txt"
+        let document = Directory.document(mask: .UserDomainMask)
         
-        let fileURL = NSURL(filename: filename, withExtension: fileExtension, in: .document)
+        let fileURL = NSURL(filename: filename, withExtension: fileExtension, in: document)
         
-        let expectedFilePath = Directory.document.path + "/\(filename).\(fileExtension)"
+        let expectedFilePath = document.path + "/\(filename).\(fileExtension)"
         
         XCTAssertEqual(fileURL.path!, expectedFilePath)
         

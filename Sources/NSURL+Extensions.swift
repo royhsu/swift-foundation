@@ -30,16 +30,11 @@ public extension NSURL {
     // See details: http://stackoverflow.com/questions/32716895/error-the-file-doesnt-exist-when-calling-writetofile-on-imagedata
     convenience init(filename: String, withExtension `extension`: String, `in` directory: Directory) {
         
-        switch directory {
-        case .document:
-            
-            let documentDirectoryPath = Directory.document.path
-            let filePath = documentDirectoryPath
-                .appendPathComponent(filename)
-                .appendPathExtension(`extension`)!
-            
-            self.init(fileURLWithPath: filePath, isDirectory: false)
-        }
+        let filePath = directory.path
+            .appendPathComponent(filename)
+            .appendPathExtension(`extension`)!
+        
+        self.init(fileURLWithPath: filePath, isDirectory: false)
         
     }
     

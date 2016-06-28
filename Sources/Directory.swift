@@ -8,21 +8,29 @@
 
 import Foundation
 
-public enum Directory { case document }
+public enum Directory { case document(mask: NSSearchPathDomainMask) }
 
 public extension Directory {
+    
+    var searchPath: NSSearchPathDirectory {
+        
+        switch self {
+        case .document: return .DocumentDirectory
+        }
+        
+    }
     
     var path: String {
         
         switch self {
-        case .document:
+        case .document(let mask):
             
             let documentDirectoryPaths = NSSearchPathForDirectoriesInDomains(
-                .DocumentDirectory,
-                .UserDomainMask,
+                self.searchPath,
+                mask,
                 true
             )
-        
+            
             return documentDirectoryPaths.first!
         }
         
@@ -31,12 +39,11 @@ public extension Directory {
     var URL: NSURL {
         
         switch self {
-        case .document:
+        case .document(let mask):
             
-            let documentDirectoryURLs =
-                NSFileManager.defaultManager().URLsForDirectory(
-                    .DocumentDirectory,
-                    inDomains: .UserDomainMask
+            let documentDirectoryURLs = NSFileManager.defaultManager().URLsForDirectory(
+                self.searchPath,
+                inDomains: mask
             )
             
             return documentDirectoryURLs.first!
