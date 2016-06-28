@@ -1,5 +1,5 @@
 //
-//  NSString+Extensions.swift
+//  String+Extensions.swift
 //  TWFoundation
 //
 //  Created by 許郁棋 on 2016/6/27.

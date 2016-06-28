@@ -1,5 +1,5 @@
 //
-//  NSStringTests.swift
+//  StringTests.swift
 //  TWFoundationTests
 //
 //  Created by 許郁棋 on 2016/6/27.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class NSStringTests: XCTestCase {
+class StringTests: XCTestCase {
     
     func testAppendingPathComponent() {
         
