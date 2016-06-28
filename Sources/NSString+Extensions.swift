@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
     // Note: This function only works in file path. DO NOT apply it on URL string.
     // See details: http://stackoverflow.com/questions/2579544/nsstrings-stringbyappendingpathcomponent-removes-a-in-http

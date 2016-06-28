@@ -10,7 +10,7 @@ import Foundation
 
 public enum Directory { case document }
 
-extension Directory {
+public extension Directory {
     
     var path: String {
         
