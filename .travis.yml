@@ -1,5 +1,5 @@
 language: objective-c
 osx_image: xcode7.3
 xcode_project: TWFoundation/TWFoundation.xcodeproj # path to your xcodeproj folder
-xcode_scheme: TWFoundationTests
+xcode_scheme: TWFoundation
 xcode_sdk: iphonesimulator9.3
