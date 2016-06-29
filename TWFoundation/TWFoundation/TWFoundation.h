@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Tiny World. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for TWFoundation.
 FOUNDATION_EXPORT double TWFoundationVersionNumber;
