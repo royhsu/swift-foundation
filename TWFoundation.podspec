@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.homepage         = 'https://github.com/royhsu/swift-foundation'
   spec.authors          = { 'Tiny World' => 'roy.hsu@tinyworld.cc' }
   spec.summary          = 'A personalized foundation framework for Swift.'
-  spec.source           = { :git => 'https://github.com/royhsu/swift-foundation.git', :head }
+  spec.source           = { :git => 'https://github.com/royhsu/swift-foundation.git', :tag => spec.version }
 
   spec.ios.deployment_target = '8.0'
 
