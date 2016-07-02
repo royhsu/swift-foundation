@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode8
 xcode_project: TWFoundation/TWFoundation.xcodeproj # path to your xcodeproj folder
 xcode_scheme: TWFoundation
-xcode_sdk: iphonesimulator10.0
+xcode_sdk: iphonesimulator10.0 
