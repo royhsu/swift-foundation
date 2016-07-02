@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B0153F101D2222E800AD1B1B /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0153F0E1D2222E800AD1B1B /* StringTests.swift */; };
-		B0153F111D2222E800AD1B1B /* NSURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0153F0F1D2222E800AD1B1B /* NSURLTests.swift */; };
+		B0153F111D2222E800AD1B1B /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0153F0F1D2222E800AD1B1B /* URLTests.swift */; };
 		B0153F121D2222F600AD1B1B /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE83FD1D2216CA00B4B334 /* Directory.swift */; };
 		B0153F131D2222F600AD1B1B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE83FE1D2216CA00B4B334 /* String+Extensions.swift */; };
-		B0153F141D2222F600AD1B1B /* NSURL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE83FF1D2216CA00B4B334 /* NSURL+Extensions.swift */; };
+		B0153F141D2222F600AD1B1B /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE83FF1D2216CA00B4B334 /* URL+Extensions.swift */; };
 		B0AE83E61D22136600B4B334 /* TWFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = B0AE83E51D22136600B4B334 /* TWFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0AE84001D2216CA00B4B334 /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE83FD1D2216CA00B4B334 /* Directory.swift */; };
 		B0AE84011D2216CA00B4B334 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE83FE1D2216CA00B4B334 /* String+Extensions.swift */; };
-		B0AE84021D2216CA00B4B334 /* NSURL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE83FF1D2216CA00B4B334 /* NSURL+Extensions.swift */; };
+		B0AE84021D2216CA00B4B334 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE83FF1D2216CA00B4B334 /* URL+Extensions.swift */; };
 		B0AE84121D221A1700B4B334 /* TWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0AE83E21D22136600B4B334 /* TWFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,13 +31,13 @@
 
 /* Begin PBXFileReference section */
 		B0153F0E1D2222E800AD1B1B /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
-		B0153F0F1D2222E800AD1B1B /* NSURLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLTests.swift; sourceTree = "<group>"; };
+		B0153F0F1D2222E800AD1B1B /* URLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
 		B0AE83E21D22136600B4B334 /* TWFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TWFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AE83E51D22136600B4B334 /* TWFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWFoundation.h; sourceTree = "<group>"; };
 		B0AE83E71D22136600B4B334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0AE83FD1D2216CA00B4B334 /* Directory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Directory.swift; sourceTree = "<group>"; };
 		B0AE83FE1D2216CA00B4B334 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		B0AE83FF1D2216CA00B4B334 /* NSURL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+Extensions.swift"; sourceTree = "<group>"; };
+		B0AE83FF1D2216CA00B4B334 /* URL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		B0AE840D1D221A1700B4B334 /* TWFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AE84111D221A1700B4B334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +94,7 @@
 			children = (
 				B0AE83FD1D2216CA00B4B334 /* Directory.swift */,
 				B0AE83FE1D2216CA00B4B334 /* String+Extensions.swift */,
-				B0AE83FF1D2216CA00B4B334 /* NSURL+Extensions.swift */,
+				B0AE83FF1D2216CA00B4B334 /* URL+Extensions.swift */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				B0153F0E1D2222E800AD1B1B /* StringTests.swift */,
-				B0153F0F1D2222E800AD1B1B /* NSURLTests.swift */,
+				B0153F0F1D2222E800AD1B1B /* URLTests.swift */,
 				B0AE84111D221A1700B4B334 /* Info.plist */,
 			);
 			path = TWFoundationTests;
@@ -167,14 +167,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Tiny World";
 				TargetAttributes = {
 					B0AE83E11D22136600B4B334 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 					B0AE840C1D221A1700B4B334 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -220,7 +222,7 @@
 			files = (
 				B0AE84001D2216CA00B4B334 /* Directory.swift in Sources */,
 				B0AE84011D2216CA00B4B334 /* String+Extensions.swift in Sources */,
-				B0AE84021D2216CA00B4B334 /* NSURL+Extensions.swift in Sources */,
+				B0AE84021D2216CA00B4B334 /* URL+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,9 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0153F111D2222E800AD1B1B /* NSURLTests.swift in Sources */,
+				B0153F111D2222E800AD1B1B /* URLTests.swift in Sources */,
 				B0153F101D2222E800AD1B1B /* StringTests.swift in Sources */,
-				B0153F141D2222F600AD1B1B /* NSURL+Extensions.swift in Sources */,
+				B0153F141D2222F600AD1B1B /* URL+Extensions.swift in Sources */,
 				B0153F121D2222F600AD1B1B /* Directory.swift in Sources */,
 				B0153F131D2222F600AD1B1B /* String+Extensions.swift in Sources */,
 			);
@@ -351,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinyworld.TWFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -367,6 +370,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinyworld.TWFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -380,6 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinyworld.TWFoundationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -392,6 +398,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinyworld.TWFoundationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

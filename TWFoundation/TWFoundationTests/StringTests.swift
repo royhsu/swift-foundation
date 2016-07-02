@@ -15,16 +15,16 @@ class StringTests: XCTestCase {
         let appendingPath = "test"
         
         let filePath = "examples/example"
-        let finalFilePath = filePath.appendPathComponent(appendingPath)
+        let finalFilePath = filePath.appendingPathComponent(appendingPath)
         let expectedPath = filePath + "/\(appendingPath)"
         
-        XCTAssertEqual(finalFilePath, expectedPath)
+        XCTAssertEqual(finalFilePath, expectedPath, "The result doesn't match.")
         
-        let URLString = "http://example.com"
-        let finalURLString = URLString.appendPathComponent(appendingPath)
-        let expectedURLString = URLString + "/\(appendingPath)"
+        let urlString = "http://example.com"
+        let finalURLString = urlString.appendingPathComponent(appendingPath)
+        let expectedURLString = urlString + "/\(appendingPath)"
         
-        XCTAssertNotEqual(finalURLString, expectedURLString)
+        XCTAssertNotEqual(finalURLString, expectedURLString, "The result doesn't match.")
         
     }
     
@@ -33,16 +33,36 @@ class StringTests: XCTestCase {
         let appendingExtension = "txt"
         
         let filePath = "example"
-        let finalFilePath = filePath.appendPathExtension(appendingExtension)
-        let expectedPath = filePath + ".\(appendingExtension)"
         
-        XCTAssertEqual(finalFilePath, expectedPath)
+        do {
+            
+            let finalFilePath = try filePath.appendingPathExtension(appendingExtension)
+            let expectedPath = filePath + ".\(appendingExtension)"
         
-        let URLString = "http://example"
-        let finalURLString = URLString.appendPathExtension(appendingExtension)
-        let expectedURLString = URLString + "/\(appendingExtension)"
+            XCTAssertEqual(finalFilePath, expectedPath, "The result doesn't match.")
+            
+        }
+        catch {
+            
+            XCTAssertNil(error, "Should not throw a error.")
+            
+        }
         
-        XCTAssertNotEqual(finalURLString, expectedURLString)
+        let urlString = "http://example"
+        
+        do {
+        
+            let finalURLString = try urlString.appendingPathExtension(appendingExtension)
+            let expectedURLString = urlString + "/\(appendingExtension)"
+            
+            XCTAssertNotEqual(finalURLString, expectedURLString, "The result doesn't match.")
+            
+        }
+        catch {
+            
+            XCTAssertNil(error, "Should not throw a error.")
+            
+        }
         
     }
     

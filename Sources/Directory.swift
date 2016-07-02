@@ -8,14 +8,17 @@
 
 import Foundation
 
-public enum Directory { case document(mask: NSSearchPathDomainMask) }
+public typealias SearchPathDomainMask = FileManager.SearchPathDomainMask
+public typealias SearchPathDirectory = FileManager.SearchPathDirectory
+
+public enum Directory { case document(mask: SearchPathDomainMask) }
 
 public extension Directory {
     
-    var searchPath: NSSearchPathDirectory {
+    var searchPath: SearchPathDirectory {
         
         switch self {
-        case .document: return .DocumentDirectory
+        case .document: return .documentDirectory
         }
         
     }
@@ -36,12 +39,12 @@ public extension Directory {
         
     }
     
-    var URL: NSURL {
+    var url: URL {
         
         switch self {
         case .document(let mask):
             
-            let documentDirectoryURLs = NSFileManager.defaultManager().URLsForDirectory(
+            let documentDirectoryURLs = FileManager.default().urlsForDirectory(
                 self.searchPath,
                 inDomains: mask
             )
